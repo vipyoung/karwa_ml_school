@@ -15,7 +15,8 @@ if __name__ == '__main__':
     data = np.array(points)
     
     # Run clustering
-    kmeans = KMeans(n_clusters=3, random_state=1).fit(data)
+    kmeans = KMeans(n_clusters=4, random_state=1).fit(data)
+    print kmeans.inertia_
     labels = kmeans.labels_
    
     # Plot clusters
